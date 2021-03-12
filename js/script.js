@@ -16,6 +16,11 @@ function palindromeWord(word) {
     }
 }
 
+//Function check
+function checkValues() {
+
+}
+
 // Function random number
 function randomNumber(min,max) {
     var rndMin = min;
@@ -77,7 +82,7 @@ function exercise2() {
     var sides = [
         "e",
         "o"
-    ]
+    ];
 
     if (!sides.includes(userSide)) {
         errors = true;
