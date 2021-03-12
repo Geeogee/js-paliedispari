@@ -107,13 +107,16 @@ function exercise2() {
             evenString = "Odd";
         }
 
-        console.log("You choosed " + evenString + ".");
+        console.log("You choosed " + evenString);
         console.log("You choosed " + userNumber);
         console.log("Pc number " + rndNum);
         console.log("The sum is " + totalNum);
+
         if (userEven == oddEven) {
+
             console.log("You win!")
         } else {
+
             console.log("You lose!")
         }
 
