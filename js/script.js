@@ -88,27 +88,32 @@ function exercise2() {
     }
 
     if (!errors) {
+
         var rndNum = randomNumber(1,5);
-        console.log(rndNum);
         var totalNum = sum(userNumber, rndNum);
-        console.log(totalNum);
         var oddEven = even(totalNum); 
-        console.log(oddEven);
+
 
         if (userSide == "e") {
             userEven = true;
+            var evenString = "Even";
         } else {
             userEven = false;
+            evenString = "Odd";
         }
 
+        console.log("You choosed " + evenString + ".");
+        console.log("You choosed " + userNumber);
+        console.log("Pc number " + rndNum);
+        console.log("The sum is " + totalNum);
         if (userEven == oddEven) {
-            console.log("User wins!")
+            console.log("You win!")
         } else {
-            console.log("User loses!")
+            console.log("You lose!")
         }
-        
+
     } else {
-        console.log("Ops!")
+        console.log("One or more values are invalid. Please check and insert valid values!")
     }
 
 }
