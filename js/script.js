@@ -85,10 +85,12 @@ function exercise2() {
     ];
 
     if (!sides.includes(userSide)) {
+
         errors = true;
     }
 
     if (userNumber < 1 || userNumber > 5) {
+
         errors = true;
     }
 
@@ -100,9 +102,11 @@ function exercise2() {
 
 
         if (userSide == "e") {
+
             userEven = true;
             var evenString = "Even";
         } else {
+
             userEven = false;
             evenString = "Odd";
         }
@@ -121,6 +125,7 @@ function exercise2() {
         }
 
     } else {
+        
         console.log("One or more values are invalid. Please check and insert valid values!")
     }
 
