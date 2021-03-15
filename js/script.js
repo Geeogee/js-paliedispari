@@ -1,4 +1,5 @@
 // Function find a palindrome
+// Versione 1
 function palindromeWord(word) {
 
     var reverseWord = "";
@@ -16,6 +17,27 @@ function palindromeWord(word) {
     }
 }
 
+// Versione 2
+
+// function palindromeWord(word) {
+
+//     var lng = word.length;
+//     var palLng = Math.floor(lng / 2);
+
+//     for (var i=0;i<palLng;i++) {
+
+//         var finalI = lng - i - 1; 
+//         var charI = word[i];
+//         var charFinalI = word[finalI];
+
+//         if (charI != charFinalI) {
+
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
 //Function check
 function checkValues() {
 
@@ -25,7 +47,6 @@ function checkValues() {
 function randomNumber(min,max) {
     var rndMin = min;
     var rndMax = max - min + 1;
-
     var rndNum = Math.floor(Math.random() * rndMax) + rndMin;
 
     return rndNum;
@@ -81,7 +102,7 @@ function exercise2() {
 
     var sides = [
         "e",
-        "o"
+        "o",
     ];
 
     if (!sides.includes(userSide)) {
@@ -99,7 +120,6 @@ function exercise2() {
         var rndNum = randomNumber(1,5);
         var totalNum = sum(userNumber, rndNum);
         var oddEven = even(totalNum); 
-
 
         if (userSide == "e") {
 
@@ -125,11 +145,36 @@ function exercise2() {
         }
 
     } else {
-        
+
         console.log("One or more values are invalid. Please check and insert valid values!")
     }
 
 }
+
+
+// Versione 2
+// function exercise2() {
+//     var userPair = prompt('Dimmi pari o dispari');
+//     var userValue = parseInt(prompt('Dimmi un valore'));
+//     var rndValue = getRandomValue(1, 5);
+//     var finalValue = userValue + rndValue;
+//     var finalIsPair = finalValue % 2 == 0;
+//     var finalIsOdd = finalValue % 2 > 0;
+//     // if (userPair == 'pari' && finalIsPair) {
+//     //     console.log('Hai vinto!!');
+//     // } else if (userPair == 'dispari' && !finalIsPair) {
+//     //     console.log('Hai vinto!!');
+//     // } else {
+//     //     console.log('Hai perso :-(');
+//     // }
+//     if ((userPair == 'pari' && finalIsPair)
+//        || (userPair == 'dispari' && finalIsOdd)) {
+//         console.log('Hai vinto!!');
+//     } else  {
+//         console.log('Hai perso :-(');
+//     }
+//     console.log(finalValue);
+// }
 
 // exercise1();
 exercise2();
